@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Times New Roman", Times, serif;
+}
+li {
+  list-style: none;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 83vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 30px;
+  min-block-size: 0cm;
+  mask: size 23px;
+}
+header ul {
+  position: relative;
+  display: flex;
+  bottom: 2.5rem;
+}
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: rgb(247, 248, 248);
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #f10909;
+  border-radius: 30px;
+  font-weight: 400;
+  margin-left: 30px;
+  text-decoration: none;
+}
+header ul a:hover {
+  background-color: #450dae;
+}
+.content {
+  position: absolute;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  top: 6rem;
+  height: 33rem;
+}
+.content .textbox {
+  position: relative;
+  max-width: 600px;
+}
+.content .textbox h2 {
+  color: rgba(9, 0, 1, 0.893);
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.content .textbox h2 span {
+  color: rgb(7, 1, 1);
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.content .textbox p {
+  color: #333;
+  padding: 40px 1px;
+  font-size: 19px;
+  font-weight: 300;
+}
+.content .textbox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #090909;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.content .textbox a:hover {
+  background-color: rgb(14, 14, 202);
+}
+.content .imgbox {
+  position: relative;
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 200px 400px;
+  margin-top: 200px;
+  margin-right: 300px;
+}
+
+.content .imgbox img {
+  max-width: 540;
+  left: 34rem;
+  bottom: -13rem;
+}
+
+img.social {
+  position: relative;
+  width: 4rem;
+  left: 4rem;
+  align-items: baseline-position;
+  transform: translateX(-50);
+  cursor: pointer;
+  border: 2px white solid;
+  border-radius: 62px;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 100%;
+  height: 120%;
+  background: #f40919;
+  clip-path: circle(600px at left);
+}
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+.thumb li img {
+  max-width: 60px;
+}
+h2 {
+  margin: 10rem 1rem 1rem 0rem;
+}
+
+img#brand {
+  border: 1px red solid;
+  width: 12rem;
+  display: inline-block;
+  border-radius: 2rem;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: -6rem;
+  transform: translateX(-50%);
+  display: flex;
+}
+img#imgbox {
+  position: relative;
+  left: 15rem;
+  top: 5rem;
+}
+div#block {
+  position: absolute;
+  left: 36rem;
+}
+ul#socialid {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    padding: -1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  header ul li a {
+    color: black;
+    display: inline-block;
+    color: rgb(247, 248, 248);
+    margin-top: 28px;
+    padding: 15px 5px;
+    background: black;
+    border-radius: 30px;
+    font-weight: 400;
+    margin-left: 30px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    right: 1rem;
+    width: 6rem;
+    z-index: 1;
+  }
+  header ul li {
+    list-style: none;
+    margin: 6px -12px;
+  }
+  .content .textbox h2 {
+    color: rgba(9, 0, 1, 0.893);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    position: relative;
+    margin: 36rem 0rem 0rem -5rem;
+  }
+  header .logo {
+    position: relative;
+    max-width: 30px;
+    min-block-size: 0cm;
+    mask: size 23px;
+    position: relative;
+    right: 6rem;
+    margin: -1rem 1rem 1rem 1rem;
+  }
+  .circle {
+    position: absolute;
+    top: 6%;
+    right: 24%;
+    width: 103%;
+    height: 112%;
+    background: #f40919;
+    clip-path: circle(416px at left);
+  }
+  .content .textbox p {
+    color: black;
+    padding: 40px 1px;
+    font-size: 19px;
+    font-weight: 300;
+    width: 18rem;
+    text-align: justify;
+    position: relative;
+    right: 3rem;
+    bottom: 0rem;
+  }
+  img.social {
+    position: relative;
+    width: 4rem;
+    left: 3rem;
+    align-items: baseline-position;
+    transform: translateX(-50);
+    cursor: pointer;
+    border: 2px white solid;
+    border-radius: 62px;
+    top: 4rem;
+  }
+
+  .thumb {
+    position: absolute;
+    left: 50%;
+    top: 94rem;
+    transform: translateX(-50%);
+    display: flex;
+    margin-bottom: 16rem;
+  }
+  div#block {
+    position: absolute;
+    right: 8rem;
+  }
+  .content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 30px;
+    background: #090909;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 0.5rem auto;
+  }
+  .content {
+    position: absolute;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    top: 6rem;
+    height: 33rem;
+  }
+
+  div#block {
+    position: absolute;
+    left: -7rem;
+    top: 56rem;
+  }
+  img#imgbox {
+    position: relative;
+    left: 3rem;
+    top: 5rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  header ul li a {
+    color: black;
+    display: inline-block;
+    color: rgb(247, 248, 248);
+    margin-top: 28px;
+    padding: 11px 7px;
+    background: black;
+    border-radius: 15px;
+    font-weight: 365px;
+    margin-left: 29px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    right: 1px;
+    width: 4rem;
+    z-index: 1;
+    font-size: 15px;
+  }
+
+  header ul li {
+    list-style: none;
+    margin: 6px -10px;
+  }
+  .circle {
+    position: absolute;
+    top: 6%;
+    right: 24%;
+    width: 144%;
+    height: 130%;
+    background: #f40919;
+    clip-path: circle(416px at left);
+  }
+  ul#socialid {
+    display: flex;
+    flex-direction: row;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  img.social {
+    position: relative;
+    width: 4rem;
+    left: -1rem;
+    align-items: baseline-position;
+    transform: translateX(-50);
+    cursor: pointer;
+    border: 2px white solid;
+    border-radius: 62px;
+    top: 50rem;
+  }
+  img#imgbox {
+    position: relative;
+    left: 2rem;
+    top: 10rem;
+    width: 16rem;
+  }
+  .content .textbox p {
+    color: black;
+    padding: 40px 1px;
+    font-size: 19px;
+    font-weight: 300;
+    width: 16rem;
+    text-align: justify;
+    position: relative;
+    right: 5rem;
+    bottom: 0rem;
+  }
+  div#block {
+    position: absolute;
+    left: -7rem;
+    top: 57rem;
+  }
+  .content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 30px;
+    background: #090909;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    left: -2rem;
+    margin: 0.5rem auto;
+    width: 10rem;
+  }
+  .content {
+    position: absolute;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    top: 6rem;
+    height: 33rem;
+  }
+  .content .textbox {
+    position: relative;
+    max-width: 0px;
+  }
+  img#brand {
+    border: 1px red solid;
+    width: 10rem;
+    display: inline-block;
+    border-radius: 2rem;
+    position: le;
+    position: relative;
+    left: 3rem;
+    margin: -1rem 0rem;
+  }
+  .thumb {
+    position: absolute;
+    left: 50%;
+    top: 96rem;
+    transform: translateX(-50%);
+    display: flex;
+    margin-bottom: 16rem;
+  }
+}

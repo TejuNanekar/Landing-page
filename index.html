@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vadilal web landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#" class="logo" ><img   id="brand" src="vadilallogo.png"></a>
+     
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">New added</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textbox">
+        <h2>Make memories with<br><span>Vadilal</span></h2>
+        <p>Vadilal makes multiple flavors and packs of ice cream, across forms (cones, candies, bars, ice-lollies,
+        small cups, big cups, family packs, and economy packs). In addition to a supermarket presence,
+        Vadilal also has a retail presence through its chain of Happinnezz ice-cream parlors, 
+        which is run through a franchisee model. Since Vadilal started by catering to the people of Gujarat, all their products are vegetarian </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div id="block"><img src="white.png" id="imgbox" class="vdl">
+      </div>
+    </div>
+    <div class="imgx"></div>
+      <ul id="socialid"><li><img src="fb.png" class="social"></li>
+        <li><img src="insta.png" class="social"></li>
+      </ul>
+    </div>
+    <ul class="thumb">
+      <li><img src="w1.png" onclick="imgSlider('white.png');changeCircleColor('#dd1414')"></li>
+      <li><img src="c1.png" onclick="imgSlider('choco.png');changeCircleColor('#812929')"></li>
+      <li><img src="p1.png" onclick="imgSlider('pink.png');changeCircleColor('#cd6c42')"></li>
+    </ul>
+      
+
+  </section> 
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.vdl').src = anything;
+    }
+    function changeCircleColor(color){
+      const circle=document.querySelector('.circle');
+      circle.style.background=color;
+    }
+  </script> 
+      
+    
+  
+</body>
+</html>
